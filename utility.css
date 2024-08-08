@@ -1,0 +1,11 @@
+.flex{
+    display: flex;
+}
+
+.border{
+    border: 1px solid black;
+}
+
+.text{
+    text-align: center;
+}

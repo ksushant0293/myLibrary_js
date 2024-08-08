@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div>
+        <header class=" header">
+            <h1>MY LIBRARY</h1>
+            <a href="">Login</a>
+        </header>
+        <main class="main">
+            <div class="left">
+                <div class="library-log border">
+                    <h2 class="text">Library Log</h2>
+                    <div class="log-div">
+                        <div>Total Book Count: 0</div>
+                        <div>Read: 0</div>
+                        <div>Not Read: 0</div>
+                    </div>
+                </div>
+
+                <div class="add-book border">
+                    <h2 class="text">Add A New Book</h2>
+                    <form class="book-form">
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" name="title" placeholder="Title" required><br>
+                        <label for="author">Author:</label>
+                        <input type="text" id="author" name="author" placeholder="Author" required><br>
+                        <label for="pages">No. of Pages:</label>
+                        <input type="number" id="pages" name="pages" placeholder="Pages" required><br>
+                        <label for="cars">Read status:</label>
+                        <select name="read-option" id="read-option">
+                            <option value="true">Read</option>
+                            <option value="false">Not Read</option>
+                        </select><br>
+                        <div class="flex">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="right border ">
+                <div>
+                    <h1 class="text">List of Books</h1>
+                    <div class="table-div">
+                        <table class="book-table" style="width: 95%;">
+                            <thead>
+                                <tr class="border">
+                                    <th>Title</th>
+                                    <th>Author</th>
+                                    <th>Pages</th>
+                                    <th>Read Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p class="text">Copyright 2024 sushant</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
